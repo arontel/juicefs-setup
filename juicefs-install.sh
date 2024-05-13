@@ -17,7 +17,7 @@ if [ -f $JUICE_PATH ] && [ ! -L $JUICE_PATH ]
 then
   CURRENT_VERSION="$(get_version ${JUICE_PATH})"
   mv "${JUICE_PATH}" "/usr/local/bin/${CURRENT_VERSION}"
-  rm "$JUICE_PATH"
+  rm -f "$JUICE_PATH"
 fi
 
 chmod +x juicefs-download
