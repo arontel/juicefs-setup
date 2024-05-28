@@ -23,4 +23,4 @@ fi
 chmod +x juicefs-download
 NEW_VERSION="$(get_version ./juicefs-download)"
 mv juicefs-download "/usr/local/bin/${NEW_VERSION}"
-ln -sT "/usr/local/bin/${NEW_VERSION}" $JUICE_PATH
+ln -sTf "/usr/local/bin/${NEW_VERSION}" $JUICE_PATH
